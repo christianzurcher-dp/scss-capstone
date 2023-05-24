@@ -1,1 +1,9 @@
-/*# sourceMappingURL=home.css.map */
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.home .top-navbar {
+  display: flex;
+  justify-content: space-between;
+}/*# sourceMappingURL=home.css.map */
