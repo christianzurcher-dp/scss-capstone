@@ -3,6 +3,7 @@ body {
   height: 100%;
   font-family: "Roboto";
   margin: 0px;
+  background-color: #dbdbdb;
 }
 
 .home .top-navbar {
@@ -45,11 +46,67 @@ body {
   border: solid #ea1e63;
   border-radius: 25px;
   height: 50px;
-  width: 30%;
+  width: 80px;
   background-color: #ea1e63;
   color: white;
   font-size: 12px;
 }
 .home .top-navbar .right-links button:hover {
   box-shadow: 0px 0px 6px 1px rgb(234, 30, 98);
+}
+.home .welcome-screen .background {
+  margin: 0px;
+  padding: 0px;
+  position: absolute;
+  z-index: -1;
+}
+.home .welcome-screen .background img {
+  width: 98.97vw;
+  height: 80vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  filter: brightness(85%);
+}
+.home .welcome-screen .welcome {
+  color: white;
+  display: grid;
+  width: 98.97vw;
+  height: 70.5vh;
+  grid-template-rows: 3fr 1fr 2fr;
+}
+.home .welcome-screen .welcome h1 {
+  align-self: flex-end;
+  font-size: 70px;
+  justify-self: center;
+  margin-bottom: 10px;
+}
+.home .welcome-screen .welcome h4 {
+  font-family: Roboto Slab;
+  justify-self: center;
+  align-self: flex-start;
+  font-size: 18px;
+}
+.home .welcome-screen .welcome button {
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.75);
+  justify-self: center;
+  border: solid #ea1e63;
+  border-radius: 5px;
+  width: 130px;
+  height: 50px;
+  background-color: #ea1e63;
+  color: white;
+  font-size: 12px;
+  margin-top: 15px;
+}
+.home .welcome-screen .welcome button:hover {
+  box-shadow: 0px 0px 6px 1px rgb(234, 30, 98);
+}
+.home .main-content {
+  box-shadow: 0px 0px 10px 0px rgb(99, 99, 99);
+  display: grid;
+  grid-template-rows: 3fr 2fr 3fr 3fr;
+  height: 100%;
+  margin: 0px 35px;
+  background-color: white;
+  border-radius: 10px;
 }/*# sourceMappingURL=home.css.map */

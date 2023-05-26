@@ -6,6 +6,7 @@ body {
   height: 100%;
   font-family: "Roboto";
   margin: 0px;
+  background-color: $background-grey;
 }
 
 .home {
@@ -52,7 +53,7 @@ body {
         border: solid $pink;
         border-radius: 25px;
         height: 50px;
-        width: 30%;
+        width: 80px;
         background-color: $pink;
         color: white;
         font-size: 12px;
@@ -61,5 +62,69 @@ body {
         }
       }
     }
+  }
+
+  .welcome-screen {
+    .background {
+      margin: 0px;
+      padding: 0px;
+      position: absolute;
+      z-index: -1;
+
+      img {
+        width: 98.97vw;
+        height: 80vh;
+        object-fit: cover;
+        filter: brightness(85%);
+      }
+    }
+
+    .welcome {
+      color: white;
+      display: grid;
+      width: 98.97vw;
+      height: 70.5vh;
+      grid-template-rows: 3fr 1fr 2fr;
+
+      h1 {
+        align-self: flex-end;
+        font-size: 70px;
+        justify-self: center;
+        margin-bottom: 10px;
+      }
+
+      h4 {
+        font-family: Roboto Slab;
+        justify-self: center;
+        align-self: flex-start;
+        font-size: 18px;
+      }
+
+      button {
+        @include little-shadow;
+        justify-self: center;
+        border: solid $pink;
+        border-radius: 5px;
+        width: 130px;
+        height: 50px;
+        background-color: $pink;
+        color: white;
+        font-size: 12px;
+        margin-top: 15px;
+        &:hover {
+          @include pink-shadow;
+        }
+      }
+    }
+  }
+
+  .main-content {
+    @include body-shadow;
+    display: grid;
+    grid-template-rows: 3fr 2fr 3fr 3fr;
+    height: 100%;
+    margin: 0px 35px;
+    background-color: white;
+    border-radius: 10px;
   }
 }
