@@ -7,9 +7,11 @@ body {
   font-family: "Roboto";
   margin: 0px;
   background-color: $background-grey;
+  color: $default;
 }
 
 .home {
+  position: relative;
   .top-navbar {
     @include little-shadow;
     display: flex;
@@ -23,7 +25,7 @@ body {
     z-index: 1;
 
     a {
-      @include head-footer-text;
+      @include head-navbar-text;
       h4 {
         font-weight: 100;
       }
@@ -66,8 +68,6 @@ body {
 
   .welcome-screen {
     .background {
-      margin: 0px;
-      padding: 0px;
       position: absolute;
       z-index: -1;
 
@@ -120,11 +120,131 @@ body {
 
   .main-content {
     @include body-shadow;
+    background-image: url("https://images.pexels.com/photos/2921137/pexels-photo-2921137.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-size: cover;
+    background-attachment: fixed;
     display: grid;
     grid-template-rows: 3fr 2fr 3fr 3fr;
     height: 100%;
     margin: 0px 35px;
-    background-color: white;
     border-radius: 10px;
+    overflow: hidden;
+
+    .intro {
+      display: grid;
+      grid-template-rows: 1.5fr 2fr;
+      background-color: white;
+      padding-bottom: 9%;
+
+      .title {
+        display: flex;
+        justify-content: center;
+        @include div-title-text;
+      }
+
+      .categories {
+        display: flex;
+        justify-content: space-between;
+        margin: 0px 10vw;
+
+        .category {
+          display: grid;
+          justify-items: center;
+
+          h4 {
+            font-family: Roboto Slab;
+            font-size: 18px;
+            margin: 4%;
+          }
+          p {
+            @include lightgrey-text;
+            text-align: center;
+          }
+        }
+      }
+    }
+
+    .about {
+      display: flex;
+      align-items: center;
+      margin: 0px 10vw;
+      justify-content: space-between;
+
+      .about-hestia {
+        @include div-title-text;
+        color: white;
+        p {
+          font-family: Roboto;
+          font-weight: 100;
+          font-size: 18px;
+        }
+      }
+
+      .image {
+        img {
+          width: 500px;
+        }
+      }
+    }
+
+    .blog {
+      display: grid;
+      grid-template-rows: 1fr 2fr;
+      background-color: white;
+      .title {
+        @include div-title-text;
+        text-align: center;
+        align-self: center;
+      }
+
+      .links {
+        display: flex;
+        justify-content: space-between;
+        margin: 0px 7.5vw;
+        margin-right: 20%;
+        a {
+          text-decoration: none;
+          color: $default;
+        }
+
+        h5 {
+          font-size: 12px;
+          color: beige;
+        }
+
+        h4 {
+          font-family: Roboto Slab;
+          font-size: 18px;
+        }
+
+        p {
+          @include lightgrey-text;
+        }
+
+        .thousand-words {
+          h5 {
+            a {
+              color: #89229b;
+            }
+          }
+        }
+
+        .elements {
+          h5 {
+            a {
+              color: #01bcd5;
+            }
+          }
+        }
+
+        .more-tags {
+          h5 {
+            a {
+              color: #f54336;
+            }
+          }
+        }
+      }
+    }
   }
 }

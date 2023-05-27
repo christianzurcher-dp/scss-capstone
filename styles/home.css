@@ -4,8 +4,12 @@ body {
   font-family: "Roboto";
   margin: 0px;
   background-color: #dbdbdb;
+  color: #3d4859;
 }
 
+.home {
+  position: relative;
+}
 .home .top-navbar {
   box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.75);
   display: flex;
@@ -55,8 +59,6 @@ body {
   box-shadow: 0px 0px 6px 1px rgb(234, 30, 98);
 }
 .home .welcome-screen .background {
-  margin: 0px;
-  padding: 0px;
   position: absolute;
   z-index: -1;
 }
@@ -102,11 +104,110 @@ body {
   box-shadow: 0px 0px 6px 1px rgb(234, 30, 98);
 }
 .home .main-content {
-  box-shadow: 0px 0px 10px 0px rgb(99, 99, 99);
+  box-shadow: 0px 0px 20px 0px rgb(99, 99, 99);
+  background-image: url("https://images.pexels.com/photos/2921137/pexels-photo-2921137.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  background-size: cover;
+  background-attachment: fixed;
   display: grid;
   grid-template-rows: 3fr 2fr 3fr 3fr;
   height: 100%;
   margin: 0px 35px;
-  background-color: white;
   border-radius: 10px;
+  overflow: hidden;
+}
+.home .main-content .intro {
+  display: grid;
+  grid-template-rows: 1.5fr 2fr;
+  background-color: white;
+  padding-bottom: 9%;
+}
+.home .main-content .intro .title {
+  display: flex;
+  justify-content: center;
+  font-family: Roboto Slab;
+  font-size: 22.5px;
+}
+.home .main-content .intro .categories {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 10vw;
+}
+.home .main-content .intro .categories .category {
+  display: grid;
+  justify-items: center;
+}
+.home .main-content .intro .categories .category h4 {
+  font-family: Roboto Slab;
+  font-size: 18px;
+  margin: 4%;
+}
+.home .main-content .intro .categories .category p {
+  font-size: 14px;
+  color: #999999;
+  font-weight: 100;
+  margin-top: 0px;
+  text-align: center;
+}
+.home .main-content .about {
+  display: flex;
+  align-items: center;
+  margin: 0px 10vw;
+  justify-content: space-between;
+}
+.home .main-content .about .about-hestia {
+  font-family: Roboto Slab;
+  font-size: 22.5px;
+  color: white;
+}
+.home .main-content .about .about-hestia p {
+  font-family: Roboto;
+  font-weight: 100;
+  font-size: 18px;
+}
+.home .main-content .about .image img {
+  width: 500px;
+}
+.home .main-content .blog {
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  background-color: white;
+}
+.home .main-content .blog .title {
+  font-family: Roboto Slab;
+  font-size: 22.5px;
+  text-align: center;
+  align-self: center;
+}
+.home .main-content .blog .links {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 7.5vw;
+  margin-right: 20%;
+}
+.home .main-content .blog .links a {
+  text-decoration: none;
+  color: #3d4859;
+}
+.home .main-content .blog .links h5 {
+  font-size: 12px;
+  color: beige;
+}
+.home .main-content .blog .links h4 {
+  font-family: Roboto Slab;
+  font-size: 18px;
+}
+.home .main-content .blog .links p {
+  font-size: 14px;
+  color: #999999;
+  font-weight: 100;
+  margin-top: 0px;
+}
+.home .main-content .blog .links .thousand-words h5 a {
+  color: #89229b;
+}
+.home .main-content .blog .links .elements h5 a {
+  color: #01bcd5;
+}
+.home .main-content .blog .links .more-tags h5 a {
+  color: #f54336;
 }/*# sourceMappingURL=home.css.map */
