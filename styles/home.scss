@@ -11,7 +11,6 @@ body {
 }
 
 .home {
-  position: relative;
   .top-navbar {
     @include little-shadow;
     display: flex;
@@ -245,6 +244,87 @@ body {
           }
         }
       }
+    }
+
+    .get-in-touch {
+      color: white;
+      margin: 0px 7.5vw;
+      .title {
+        @include div-title-text;
+      }
+
+      .location {
+        display: flex;
+
+        .icon {
+          padding-top: 1%;
+          padding-right: 1%;
+        }
+
+        .text {
+          p {
+            font-size: 14px;
+            color: white;
+            font-weight: 100;
+          }
+
+          h4 {
+            font-family: Roboto Slab;
+          }
+        }
+      }
+
+      .contact {
+        display: flex;
+
+        .icon {
+          padding-top: 1%;
+          padding-right: 1%;
+        }
+
+        .text {
+          p {
+            font-size: 14px;
+            color: white;
+            font-weight: 100;
+          }
+
+          h4 {
+            font-family: Roboto Slab;
+          }
+        }
+      }
+    }
+  }
+
+  .home-footer {
+    @include little-shadow;
+    display: flex;
+    background-color: $footer-grey;
+    height: 100px;
+    padding: 0px 7.5vw;
+    margin-top: -10px;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+    p {
+      color: white;
+      font-size: 14px;
+    }
+
+    a {
+      text-decoration: none;
+      color: $footer-link;
+    }
+
+    .left-links {
+      display: flex;
+      width: 13%;
+      justify-content: space-between;
+    }
+
+    .right-links {
+      justify-content: space-between;
     }
   }
 }

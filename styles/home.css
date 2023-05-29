@@ -7,9 +7,6 @@ body {
   color: #3d4859;
 }
 
-.home {
-  position: relative;
-}
 .home .top-navbar {
   box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.75);
   display: flex;
@@ -210,4 +207,69 @@ body {
 }
 .home .main-content .blog .links .more-tags h5 a {
   color: #f54336;
+}
+.home .main-content .get-in-touch {
+  color: white;
+  margin: 0px 7.5vw;
+}
+.home .main-content .get-in-touch .title {
+  font-family: Roboto Slab;
+  font-size: 22.5px;
+}
+.home .main-content .get-in-touch .location {
+  display: flex;
+}
+.home .main-content .get-in-touch .location .icon {
+  padding-top: 1%;
+  padding-right: 1%;
+}
+.home .main-content .get-in-touch .location .text p {
+  font-size: 14px;
+  color: white;
+  font-weight: 100;
+}
+.home .main-content .get-in-touch .location .text h4 {
+  font-family: Roboto Slab;
+}
+.home .main-content .get-in-touch .contact {
+  display: flex;
+}
+.home .main-content .get-in-touch .contact .icon {
+  padding-top: 1%;
+  padding-right: 1%;
+}
+.home .main-content .get-in-touch .contact .text p {
+  font-size: 14px;
+  color: white;
+  font-weight: 100;
+}
+.home .main-content .get-in-touch .contact .text h4 {
+  font-family: Roboto Slab;
+}
+.home .home-footer {
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.75);
+  display: flex;
+  background-color: #323437;
+  height: 100px;
+  padding: 0px 7.5vw;
+  margin-top: -10px;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+}
+.home .home-footer p {
+  color: white;
+  font-size: 14px;
+}
+.home .home-footer a {
+  text-decoration: none;
+  color: #e2e2e3;
+}
+.home .home-footer .left-links {
+  display: flex;
+  width: 13%;
+  justify-content: space-between;
+}
+.home .home-footer .right-links {
+  justify-content: space-between;
 }/*# sourceMappingURL=home.css.map */
