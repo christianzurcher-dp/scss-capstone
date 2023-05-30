@@ -7,7 +7,7 @@ body {
   color: #3d4859;
 }
 
-.home .top-navbar {
+.page-content .top-navbar {
   box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.75);
   display: flex;
   justify-content: space-between;
@@ -19,30 +19,30 @@ body {
   background-color: #ffffff;
   z-index: 1;
 }
-.home .top-navbar a {
+.page-content .top-navbar a {
   text-decoration: none;
   color: #585858;
 }
-.home .top-navbar a h4 {
+.page-content .top-navbar a h4 {
   font-weight: 100;
 }
-.home .top-navbar .left-links a {
+.page-content .top-navbar .left-links a {
   font-size: 20px;
   font-weight: 100;
 }
-.home .top-navbar .right-links {
+.page-content .top-navbar .right-links {
   display: flex;
   width: 20%;
   justify-content: space-between;
   align-items: center;
 }
-.home .top-navbar .right-links a {
+.page-content .top-navbar .right-links a {
   font-size: 12px;
 }
-.home .top-navbar .right-links a:hover {
+.page-content .top-navbar .right-links a:hover {
   color: #ea1e63;
 }
-.home .top-navbar .right-links button {
+.page-content .top-navbar .right-links button {
   box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.75);
   border: solid #ea1e63;
   border-radius: 25px;
@@ -52,40 +52,40 @@ body {
   color: white;
   font-size: 12px;
 }
-.home .top-navbar .right-links button:hover {
+.page-content .top-navbar .right-links button:hover {
   box-shadow: 0px 0px 6px 1px rgb(234, 30, 98);
 }
-.home .welcome-screen .background {
+.page-content .welcome-screen .background {
   position: absolute;
   z-index: -1;
 }
-.home .welcome-screen .background img {
+.page-content .welcome-screen .background img {
   width: 98.97vw;
   height: 80vh;
   -o-object-fit: cover;
      object-fit: cover;
   filter: brightness(85%);
 }
-.home .welcome-screen .welcome {
+.page-content .welcome-screen .welcome {
   color: white;
   display: grid;
   width: 98.97vw;
   height: 70.5vh;
   grid-template-rows: 3fr 1fr 2fr;
 }
-.home .welcome-screen .welcome h1 {
+.page-content .welcome-screen .welcome h1 {
   align-self: flex-end;
   font-size: 70px;
   justify-self: center;
   margin-bottom: 10px;
 }
-.home .welcome-screen .welcome h4 {
+.page-content .welcome-screen .welcome h4 {
   font-family: Roboto Slab;
   justify-self: center;
   align-self: flex-start;
   font-size: 18px;
 }
-.home .welcome-screen .welcome button {
+.page-content .welcome-screen .welcome button {
   box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.75);
   justify-self: center;
   border: solid #ea1e63;
@@ -97,10 +97,10 @@ body {
   font-size: 12px;
   margin-top: 15px;
 }
-.home .welcome-screen .welcome button:hover {
+.page-content .welcome-screen .welcome button:hover {
   box-shadow: 0px 0px 6px 1px rgb(234, 30, 98);
 }
-.home .main-content {
+.page-content .main-content {
   box-shadow: 0px 0px 20px 0px rgb(99, 99, 99);
   background-image: url("https://images.pexels.com/photos/2921137/pexels-photo-2921137.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
   background-size: cover;
@@ -112,141 +112,141 @@ body {
   border-radius: 10px;
   overflow: hidden;
 }
-.home .main-content .intro {
+.page-content .main-content .intro {
   display: grid;
   grid-template-rows: 1.5fr 2fr;
   background-color: white;
   padding-bottom: 9%;
 }
-.home .main-content .intro .title {
+.page-content .main-content .intro .title {
   display: flex;
   justify-content: center;
   font-family: Roboto Slab;
   font-size: 22.5px;
 }
-.home .main-content .intro .categories {
+.page-content .main-content .intro .categories {
   display: flex;
   justify-content: space-between;
   margin: 0px 10vw;
 }
-.home .main-content .intro .categories .category {
+.page-content .main-content .intro .categories .category {
   display: grid;
   justify-items: center;
 }
-.home .main-content .intro .categories .category h4 {
+.page-content .main-content .intro .categories .category h4 {
   font-family: Roboto Slab;
   font-size: 18px;
   margin: 4%;
 }
-.home .main-content .intro .categories .category p {
+.page-content .main-content .intro .categories .category p {
   font-size: 14px;
   color: #999999;
   font-weight: 100;
   margin-top: 0px;
   text-align: center;
 }
-.home .main-content .about {
+.page-content .main-content .about {
   display: flex;
   align-items: center;
   margin: 0px 10vw;
   justify-content: space-between;
 }
-.home .main-content .about .about-hestia {
+.page-content .main-content .about .about-hestia {
   font-family: Roboto Slab;
   font-size: 22.5px;
   color: white;
 }
-.home .main-content .about .about-hestia p {
+.page-content .main-content .about .about-hestia p {
   font-family: Roboto;
   font-weight: 100;
   font-size: 18px;
 }
-.home .main-content .about .image img {
+.page-content .main-content .about .image img {
   width: 500px;
 }
-.home .main-content .blog {
+.page-content .main-content .blog {
   display: grid;
   grid-template-rows: 1fr 2fr;
   background-color: white;
 }
-.home .main-content .blog .title {
+.page-content .main-content .blog .title {
   font-family: Roboto Slab;
   font-size: 22.5px;
   text-align: center;
   align-self: center;
 }
-.home .main-content .blog .links {
+.page-content .main-content .blog .links {
   display: flex;
   justify-content: space-between;
   margin: 0px 7.5vw;
   margin-right: 20%;
 }
-.home .main-content .blog .links a {
+.page-content .main-content .blog .links a {
   text-decoration: none;
   color: #3d4859;
 }
-.home .main-content .blog .links h5 {
+.page-content .main-content .blog .links h5 {
   font-size: 12px;
   color: beige;
 }
-.home .main-content .blog .links h4 {
+.page-content .main-content .blog .links h4 {
   font-family: Roboto Slab;
   font-size: 18px;
 }
-.home .main-content .blog .links p {
+.page-content .main-content .blog .links p {
   font-size: 14px;
   color: #999999;
   font-weight: 100;
   margin-top: 0px;
 }
-.home .main-content .blog .links .thousand-words h5 a {
+.page-content .main-content .blog .links .thousand-words h5 a {
   color: #89229b;
 }
-.home .main-content .blog .links .elements h5 a {
+.page-content .main-content .blog .links .elements h5 a {
   color: #01bcd5;
 }
-.home .main-content .blog .links .more-tags h5 a {
+.page-content .main-content .blog .links .more-tags h5 a {
   color: #f54336;
 }
-.home .main-content .get-in-touch {
+.page-content .main-content .get-in-touch {
   color: white;
   margin: 0px 7.5vw;
 }
-.home .main-content .get-in-touch .title {
+.page-content .main-content .get-in-touch .title {
   font-family: Roboto Slab;
   font-size: 22.5px;
 }
-.home .main-content .get-in-touch .location {
+.page-content .main-content .get-in-touch .location {
   display: flex;
 }
-.home .main-content .get-in-touch .location .icon {
+.page-content .main-content .get-in-touch .location .icon {
   padding-top: 1%;
   padding-right: 1%;
 }
-.home .main-content .get-in-touch .location .text p {
+.page-content .main-content .get-in-touch .location .text p {
   font-size: 14px;
   color: white;
   font-weight: 100;
 }
-.home .main-content .get-in-touch .location .text h4 {
+.page-content .main-content .get-in-touch .location .text h4 {
   font-family: Roboto Slab;
 }
-.home .main-content .get-in-touch .contact {
+.page-content .main-content .get-in-touch .contact {
   display: flex;
 }
-.home .main-content .get-in-touch .contact .icon {
+.page-content .main-content .get-in-touch .contact .icon {
   padding-top: 1%;
   padding-right: 1%;
 }
-.home .main-content .get-in-touch .contact .text p {
+.page-content .main-content .get-in-touch .contact .text p {
   font-size: 14px;
   color: white;
   font-weight: 100;
 }
-.home .main-content .get-in-touch .contact .text h4 {
+.page-content .main-content .get-in-touch .contact .text h4 {
   font-family: Roboto Slab;
 }
-.home .home-footer {
+.page-content .home-footer {
   box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.75);
   display: flex;
   background-color: #323437;
@@ -257,19 +257,19 @@ body {
   justify-content: space-between;
   font-size: 12px;
 }
-.home .home-footer p {
+.page-content .home-footer p {
   color: white;
   font-size: 14px;
 }
-.home .home-footer a {
+.page-content .home-footer a {
   text-decoration: none;
   color: #e2e2e3;
 }
-.home .home-footer .left-links {
+.page-content .home-footer .left-links {
   display: flex;
   width: 13%;
   justify-content: space-between;
 }
-.home .home-footer .right-links {
+.page-content .home-footer .right-links {
   justify-content: space-between;
 }/*# sourceMappingURL=home.css.map */
