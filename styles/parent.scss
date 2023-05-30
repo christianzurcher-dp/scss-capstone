@@ -100,6 +100,44 @@ body {
       align-items: center;
       margin-top: 60px;
     }
+
+    .comments {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 3%;
+
+      h2 {
+        font-family: Roboto Slab;
+        font-size: 27px;
+        margin-top: 0px;
+      }
+
+      .login-message {
+        display: flex;
+        padding-right: 25%;
+
+        img {
+          @include icon-shadow;
+          height: 64px;
+          width: 64px;
+          border-radius: 50%;
+          margin: 20px 10px;
+        }
+
+        p {
+          margin: 0px;
+          margin-left: 10px;
+          font-weight: 100;
+          font-size: 18px;
+        }
+
+        a {
+          text-decoration: none;
+          color: $pink;
+        }
+      }
+    }
   }
 
   .home-footer {
