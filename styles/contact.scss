@@ -6,7 +6,6 @@ body {
   height: 100%;
   font-family: "Roboto";
   margin: 0px;
-  background-color: $background-grey;
   color: $default;
 }
 
@@ -64,6 +63,118 @@ body {
           @include pink-shadow;
         }
       }
+    }
+  }
+
+  .main-content {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 12%;
+    margin-right: 25%;
+
+    .form {
+      h2 {
+        font-family: Roboto Slab;
+        font-size: 35px;
+        margin-bottom: 50px;
+      }
+
+      input {
+        border-style: none none solid none;
+        border-width: 1px;
+        width: 500px;
+        height: 30px;
+        margin-bottom: 20px;
+
+        &:focus {
+          transition: ease-in 0.2s;
+          border-color: $pink;
+          border-width: 3px;
+          outline: none;
+        }
+      }
+
+      .something {
+        input {
+          height: 200px;
+        }
+      }
+
+      button {
+        @include little-shadow;
+        justify-self: center;
+        border: solid $pink;
+        border-radius: 5px;
+        width: 130px;
+        height: 50px;
+        background-color: $pink;
+        color: white;
+        font-size: 12px;
+        margin-top: 15px;
+
+        &:hover {
+          @include pink-shadow;
+        }
+      }
+    }
+
+    .contact {
+      margin-top: 6%;
+      .category {
+        .heading {
+          display: flex;
+          align-items: center;
+          img {
+            height: 25px;
+            width: 25px;
+            margin-right: 10px;
+          }
+
+          h4 {
+            font-family: Roboto Slab;
+            font-size: 18px;
+            // margin: 0px;
+          }
+        }
+
+        .info {
+          p {
+            @include lightgrey-text;
+          }
+        }
+      }
+    }
+  }
+
+  .home-footer {
+    @include little-shadow;
+    display: flex;
+    background-color: $footer-grey;
+    height: 100px;
+    padding: 0px 7.5vw;
+    margin-top: 100px;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+
+    p {
+      color: white;
+      font-size: 14px;
+    }
+
+    a {
+      text-decoration: none;
+      color: $footer-link;
+    }
+
+    .left-links {
+      display: flex;
+      width: 13%;
+      justify-content: space-between;
+    }
+
+    .right-links {
+      justify-content: space-between;
     }
   }
 }
